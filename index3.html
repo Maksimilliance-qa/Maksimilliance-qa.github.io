@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зарплата</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+        
+        .number-container {
+            position: absolute;
+            font-size: 100px;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            animation: move 20s linear infinite;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(100%, 0);
+            }
+            50% {
+                transform: translate(100%, 100%);
+            }
+            75% {
+                transform: translate(0, 100%);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="number-container">
+        450 000
+    </div>
+</body>
+</html>
